@@ -8,3 +8,4 @@ before_script:
 script:
   - phpunit
   - phpunit --group integration
+  - security-checker security:checker composer.lock
