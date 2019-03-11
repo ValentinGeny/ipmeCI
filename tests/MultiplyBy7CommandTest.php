@@ -21,6 +21,6 @@ class MultiplyBy7CommandTest extends TestCase
          'number' => '7',
      ]);
      $output = $commandTester->getDisplay();
-     $this->assertSame("5 * 7 = 35\n", $output);
+     $this->assertSame("7 * 7 = 49\n", $output);
    }
 }
