@@ -1,4 +1,5 @@
 language: php
 php:
   - 7.1.9
-  install : composer install
+  
+install : composer install
