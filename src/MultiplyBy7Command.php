@@ -32,7 +32,7 @@ class MultiplyBy7Command extends Command
     {
         $arg = $input->getArgument('number');
         $output->writeln(
-          $arg." * 5 = ".$this->multiply->multiplyBy7($arg)
+          $arg." * 7 = ".$this->multiply->multiplyBy7($arg)
         );
     }
 }
