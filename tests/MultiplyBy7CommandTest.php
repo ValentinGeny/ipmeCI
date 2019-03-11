@@ -3,7 +3,7 @@
 namespace Tests;
 
 use App\Multiply;
-use App\MultiplyBy5Command;
+use App\MultiplyBy7Command;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Console\Tester\CommandTester;
 
