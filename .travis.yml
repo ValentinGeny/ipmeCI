@@ -6,6 +6,6 @@ before_script:
   - composer install
 
 script:
-  - phpunit
-  - phpunit --group integration
-  - security-checker security:checker composer.lock
+  - bin/phpunit
+  - bin/phpunit --group integration
+  - bin/security-checker security:checker composer.lock
