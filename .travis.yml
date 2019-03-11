@@ -8,4 +8,4 @@ before_script:
 script:
   - ./bin/phpunit
   - ./bin/phpunit --group integration
-  - ./bin/security-checker security:checker composer.lock
+  - ./bin/security-checker security:check composer.lock
