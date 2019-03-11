@@ -20,9 +20,9 @@ class Multiply
         return intval($number->getValue());
     }
 
-    public function multiplyBy6(int $number){
+    public function multiplyBy9(int $number){
 	$number = new BigNumber($number);
-	$number->multiply(6);
+	$number->multiply(9);
 	return intval($number->getValue());
     }
 }

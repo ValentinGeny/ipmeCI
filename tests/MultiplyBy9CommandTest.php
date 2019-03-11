@@ -3,24 +3,24 @@
 namespace Tests;
 
 use App\Multiply;
-use App\MultiplyBy6Command;
+use App\MultiplyBy9Command;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Console\Tester\CommandTester;
 
 /**
  * @group integration
  */
-class MultiplyBy6CommandTest extends TestCase
+class MultiplyBy9CommandTest extends TestCase
 {
   public function testExecute()
   {
-     $command = new MultiplyBy6Command(new Multiply());
+     $command = new MultiplyBy9Command(new Multiply());
      $commandTester = new CommandTester($command);
 
      $commandTester->execute([
-         'number' => '6',
+         'number' => '9',
      ]);
      $output = $commandTester->getDisplay();
-     $this->assertSame("6 * 6 = 36\n", $output);
+     $this->assertSame("9 * 9 = 81\n", $output);
    }
 }

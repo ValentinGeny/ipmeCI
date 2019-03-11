@@ -8,7 +8,7 @@ use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
-class MultiplyBy6Command extends Command
+class MultiplyBy9Command extends Command
 {
     /** @var Multiply **/
     private $multiply;
@@ -16,7 +16,7 @@ class MultiplyBy6Command extends Command
     public function __construct(Multiply $multiply)
     {
         $this->multiply = $multiply;
-        parent::__construct('multiply:6');
+        parent::__construct('multiply:9');
     }
 
     /** {@inheritdoc} **/
@@ -32,7 +32,7 @@ class MultiplyBy6Command extends Command
     {
         $arg = $input->getArgument('number');
         $output->writeln(
-          $arg." * 6 = ".$this->multiply->multiplyBy6($arg)
+          $arg." * 9 = ".$this->multiply->multiplyBy9($arg)
         );
     }
 }
